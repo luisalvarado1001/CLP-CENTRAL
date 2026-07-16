@@ -20,6 +20,9 @@ button, input, select, textarea { font: inherit; }
 .app-grid { min-height: 100vh; display: grid; grid-template-columns: 270px 1fr; }
 .sidebar { position: sticky; top: 0; height: 100vh; padding: 24px 18px; color: white; background: linear-gradient(180deg, var(--navy-dark), var(--navy)); overflow-y: auto; }
 .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 26px; }
+.brand-logo-only { justify-content: center; margin: 2px 0 28px; }
+.brand-logo-frame { width: 218px; height: 94px; display: grid; place-items: center; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 12px 28px rgba(0,0,0,.18); }
+.brand-logo-image { width: 146%; height: 146%; object-fit: contain; transform: scale(1.08); }
 .brand-mark { width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; background: white; color: var(--navy); font-weight: 900; }
 .brand-copy strong { display: block; font-size: 16px; }
 .brand-copy span { font-size: 12px; opacity: .72; }
