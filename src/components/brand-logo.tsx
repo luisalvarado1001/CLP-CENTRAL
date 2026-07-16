@@ -2,17 +2,19 @@
 
 import { useState } from 'react';
 
+const logoPath = '/brand/ChatGPT%20Image%205%20mar%202026%2C%2012_52_22%20a.m..png';
+
 export function BrandLogo() {
   const [failed, setFailed] = useState(false);
 
   if (failed) return <div className="brand-mark">CLP</div>;
 
   return (
-    <div style={{ width: 70, height: 46, display: 'grid', placeItems: 'center', background: 'white', borderRadius: 10, overflow: 'hidden', padding: 4 }}>
+    <div className="brand-logo-frame">
       <img
-        src="/brand/logo-clp.png"
+        src={logoPath}
         alt="CLP Automotriz"
-        style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
+        className="brand-logo-image"
         onError={() => setFailed(true)}
       />
     </div>
