@@ -5,11 +5,12 @@ import { usePathname } from 'next/navigation';
 import { UserButton } from '@clerk/nextjs';
 import { Menu, Search } from 'lucide-react';
 import { company, modules } from '@/lib/modules';
+import { BrandLogo } from '@/components/brand-logo';
 
 function Brand() {
   return (
     <div className="brand">
-      <div className="brand-mark">CLP</div>
+      <BrandLogo />
       <div className="brand-copy">
         <strong>{company.brand}</strong>
         <span>Sistema centralizado</span>
