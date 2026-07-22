@@ -31,9 +31,10 @@ export default async function DashboardPage() {
       {!d.hasData && (
         <section className="card setup" style={{ marginBottom: 20 }}>
           <strong>Aún no hay data cargada</strong>
-          <p style={{ margin: '7px 0 0', color: 'var(--muted)' }}>
-            Corre los seeds (<code>npm run db:seed</code> y <code>npm run db:seed-libro</code>) para cargar la información inicial, o empieza a registrar desde cada módulo.
+          <p style={{ margin: '7px 0 14px', color: 'var(--muted)' }}>
+            Entra a Configuración inicial para crear las tablas y cargar la información histórica de CLP. Se hace una sola vez.
           </p>
+          <Link href="/setup" className="btn btn-primary">Ir a configuración inicial</Link>
         </section>
       )}
 

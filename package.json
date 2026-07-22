@@ -21,6 +21,7 @@
     "@aws-sdk/s3-request-presigner": "latest",
     "@clerk/nextjs": "latest",
     "@neondatabase/serverless": "latest",
+    "dotenv": "^17.4.2",
     "drizzle-orm": "latest",
     "lucide-react": "latest",
     "next": "16.2.10",
@@ -37,7 +38,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
     "tailwindcss": "^4",
-    "typescript": "^5",
-    "tsx": "latest"
+    "tsx": "latest",
+    "typescript": "^5"
   }
 }
